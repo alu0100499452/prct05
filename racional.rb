@@ -7,8 +7,14 @@ class Fraccion
 
    # a es numerador y b denominador
 
-   def initialize (numerador, denominador)
+  def initialize (numerador, denominador)
     @a, @b = numerador, denominador
+  end
+
+  # Metodo que se solicita to_s
+
+  def to_s
+    "#{@a}/#{@b}"
   end
 
 end
