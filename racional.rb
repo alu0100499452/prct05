@@ -17,4 +17,13 @@ class Fraccion
     "#{@a}/#{@b}"
   end
 
+  # Añadiendo la suma
+
+  def +(other)
+    numerador = (@a * other.denominador) + (@b * other.numerador)
+    denominador = @b * other.denominador
+    suma = Fraccion.new(numumerador, denominador)
+    suma  #Mostrar resultado
+  end
+
 end
