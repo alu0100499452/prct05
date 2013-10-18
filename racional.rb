@@ -20,9 +20,9 @@ class Fraccion
   # Añadiendo la suma
 
   def +(other)
-    numerador = (@a * other.denominador) + (@b * other.numerador)
-    denominador = @b * other.denominador
-    suma = Fraccion.new(numumerador, denominador)
+    numerador = (@a * other.b) + (@b * other.a)
+    denominador = @b * other.b
+    suma = Fraccion.new(numerador, denominador)
     suma  #Mostrar resultado
   end
 
