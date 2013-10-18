@@ -21,10 +21,16 @@ class Test_Fraccion < Test::Unit::TestCase
 
   #Test Suma
 
-   def test_sum
+  def test_sum
     fs = @f1 + @f2
     assert_equal("140/80", fs.to_s)
   end
 
+  #Test Resta
+
+   def test_resta
+    fr = @f1 - @f2
+    assert_equal("-60/80", fr.to_s)
+  end
 
 end

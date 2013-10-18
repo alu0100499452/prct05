@@ -26,4 +26,13 @@ class Fraccion
     suma  #Mostrar resultado
   end
 
+  # Resta
+
+  def -(other)
+    numerador = (@a * other.b) - (@b * other.a)
+    denominador = @b * other.b
+    resta = Fraccion.new(numerador, denominador)
+    resta
+  end
+
 end
