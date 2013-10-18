@@ -28,9 +28,16 @@ class Test_Fraccion < Test::Unit::TestCase
 
   #Test Resta
 
-   def test_resta
+  def test_resta
     fr = @f1 - @f2
     assert_equal("-60/80", fr.to_s)
+  end
+
+ #Test Multi
+
+  def test_mult
+    fm = @f1 * @f2
+    assert_equal("50/80", fm.to_s)
   end
 
 end

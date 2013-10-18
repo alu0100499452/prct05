@@ -35,4 +35,13 @@ class Fraccion
     resta
   end
 
+  #Multiplicacion
+
+  def *(other)
+    numerador = @a * other.a
+    denominador = @b * other.b
+    mul = Fraccion.new(numerador, denominador)
+    mul
+  end
+
 end
